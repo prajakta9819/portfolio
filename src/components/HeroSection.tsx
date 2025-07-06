@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Download, Mail } from 'lucide-react';
-import heroImage from '@/assets/qa-hero.jpg';
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('');
@@ -30,12 +29,6 @@ const HeroSection = () => {
   return (
     <section 
       className="min-h-screen relative flex items-center justify-center bg-gradient-hero overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 0.9)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -51,7 +44,7 @@ const HeroSection = () => {
           </p>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-slide-in-right">
-            Alex Johnson
+            Prajakta Pakhale
           </h1>
           
           <div className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light h-12 flex items-center justify-center">
