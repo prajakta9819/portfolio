@@ -62,23 +62,35 @@ const HeroSection = () => {
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            Passionate about ensuring software quality with 3+ years of experience in manual and automated testing. 
-            I transform complex requirements into comprehensive test strategies.
+            Passionate about ensuring software quality with 3+ years of experience across India and Canada. 
+            I specialize in manual and automated testing, transforming complex requirements into comprehensive test strategies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '1s' }}>
-            <Button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0">
-              <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Get In Touch
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+            <a 
+              href="mailto:alex.johnson.qa@gmail.com"
+              className="inline-flex"
             >
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
+              <Button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0">
+                <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                Get In Touch
+              </Button>
+            </a>
+            <a 
+              href="https://github.com/alex-johnson-qa/resume/raw/main/Alex_Johnson_QA_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
+            >
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+              >
+                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
         

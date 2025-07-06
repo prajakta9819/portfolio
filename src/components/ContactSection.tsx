@@ -44,19 +44,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com"
+      value: "alex.johnson.qa@gmail.com",
+      href: "mailto:alex.johnson.qa@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+1 (416) 555-0123",
+      href: "tel:+14165550123"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Toronto, ON, Canada",
       href: null
     }
   ];
@@ -65,7 +65,7 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/alex-johnson-qa",
+      href: "https://www.linkedin.com/in/alex-johnson-qa-engineer",
       color: "hover:text-blue-400"
     },
     {
@@ -76,9 +76,9 @@ const ContactSection = () => {
     },
     {
       icon: Mail,
-      label: "Email",
-      href: "mailto:alex.johnson@email.com",
-      color: "hover:text-green-400"
+      label: "Gmail",
+      href: "mailto:alex.johnson.qa@gmail.com",
+      color: "hover:text-red-400"
     }
   ];
 
