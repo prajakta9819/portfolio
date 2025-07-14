@@ -196,9 +196,6 @@ const EducationSection = () => {
     <section className="py-20 bg-accent/30" id="education">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2">
-            Education & Certifications
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Education & Certifications</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Strong academic foundation in computer science with specialized focus on software quality and project management, 
