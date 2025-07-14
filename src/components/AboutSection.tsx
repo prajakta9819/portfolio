@@ -30,9 +30,6 @@ const AboutSection = () => {
     <section className="py-20 bg-background" id="about">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2">
-            About Me
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
         </div>
         
