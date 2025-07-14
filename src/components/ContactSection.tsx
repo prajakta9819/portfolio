@@ -59,9 +59,6 @@ const ContactSection = () => {
     <section className="py-20 bg-background" id="contact">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2">
-            Get In Touch
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to discuss your next project or explore opportunities? I'd love to hear from you and see how we can work together.
