@@ -37,6 +37,14 @@ const HeroSection = () => {
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => window.open('/resume.pdf', '_blank')}
+            >
+              📄 Download Resume
+            </Button>
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
