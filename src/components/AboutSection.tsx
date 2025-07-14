@@ -6,7 +6,7 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Target,
-      title: "3+ Years Experience",
+      title: "5 Years Experience",
       description: "Comprehensive testing across web, mobile, and API platforms in Agile Environments"
     },
     {
