@@ -31,9 +31,6 @@ const SkillsSection = () => {
     <section className="py-20 bg-accent/30" id="skills">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2">
-            Technical Skills
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Technical Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive expertise across testing methodologies, automation tools, and development practices
