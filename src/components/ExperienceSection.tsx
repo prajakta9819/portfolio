@@ -206,9 +206,6 @@ const ExperienceSection = () => {
     <section className="py-20 bg-background" id="experience">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2">
-            Professional Journey
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Professional Journey</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             3+ years of progressive QA experience across India and Canada, evolving from foundational manual testing to leading automation initiatives
