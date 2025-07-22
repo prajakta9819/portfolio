@@ -1,13 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { 
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { MapPin, Calendar, Building } from "lucide-react";
+import { MapPin, Building } from "lucide-react";
 
 const ExperienceSection = () => {
   const canadianExperience = [
@@ -16,46 +16,53 @@ const ExperienceSection = () => {
       company: "Apple Canada",
       location: "Waterloo, ON",
       period: "May 2024 - Present",
-      logo: "🍎",
-      description: "Execute daily inventory and stockroom operations with precision and efficiency to support a seamless Apple Retail customer experience.",
+      logo: `${import.meta.env.BASE_URL}logos/Apple_logo_black.svg`,
+      description:
+        "Execute daily inventory and stockroom operations with precision and efficiency to support a seamless Apple Retail customer experience.",
       achievements: [
         "Maintained 100% compliance with Apple's Retail Inventory standards during weekly audits",
         "Ensured timely fulfillment of runner requests, reducing wait times and supporting sales team success",
         "Archived sensitive government-related documents accurately and securely",
-        "Supported multiple departments during product launches and merchandising refreshes"
+        "Supported multiple departments during product launches and merchandising refreshes",
       ],
-      technologies: ["Apple Retail Inventory System", "Secure Stockroom Protocols", "Loss Prevention Procedures"]
+      technologies: [
+        "Apple Retail Inventory System",
+        "Secure Stockroom Protocols",
+        "Loss Prevention Procedures",
+      ],
     },
     {
       title: "Sales Associate",
       company: "Carlsberg Canada / Waterloo Brewing",
       location: "Waterloo, ON",
       period: "Jan 2024 – Apr 2024",
-      logo: "🍺",
-      description: "Contributed to a high-performing retail environment through product expertise and operational support.",
+      logo: `${import.meta.env.BASE_URL}logos/Carlsberg_Logo.svg`,
+      description:
+        "Contributed to a high-performing retail environment through product expertise and operational support.",
       achievements: [
         "Assisted customers with product queries and knowledgeable recommendations",
         "Maintained merchandising standards and visual displays",
         "Managed back-store operations and inventory management",
-        "Collaborated effectively as a team player"
+        "Collaborated effectively as a team player",
       ],
-      technologies: ["POS System", "Inventory Management Tools", "Excel", "Retail CRM"]
+      technologies: ["POS System", "Inventory Management Tools", "Excel", "Retail CRM"],
     },
     {
       title: "Sales Advisor",
       company: "Hennes & Mauritz (H&M)",
       location: "Waterloo, ON",
       period: "Jun 2023 – Sept 2024",
-      logo: "👗",
-      description: "Delivered exceptional customer service while supporting sales, inventory, and merchandising operations.",
+      logo: `${import.meta.env.BASE_URL}logos/H&M-Logo.svg`,
+      description:
+        "Delivered exceptional customer service while supporting sales, inventory, and merchandising operations.",
       achievements: [
         "Delivered exceptional customer service across all departments",
         "Recognized for being highly dependable and quick to learn new areas",
         "Supported truck deliveries and restocking with efficiency",
-        "Provided personalized shopping experiences contributing to store sales"
+        "Provided personalized shopping experiences contributing to store sales",
       ],
-      technologies: ["POS System", "Retail Stock Scanner", "Loss Prevention Tools"]
-    }
+      technologies: ["POS System", "Retail Stock Scanner", "Loss Prevention Tools"],
+    },
   ];
 
   const indianExperience = [
@@ -64,68 +71,113 @@ const ExperienceSection = () => {
       company: "Crescent Global IT Service Pvt Ltd/ Fugetron Corp",
       location: "Andheri, Mumbai, India",
       period: "Jan 2023 – Apr 2024",
-      logo: "🔍",
-      description: "Contributed to multiple concurrent QA projects involving mobile, web, and API testing.",
+      logo: `${import.meta.env.BASE_URL}logos/fc-logo.svg`,
+      description:
+        "Contributed to multiple concurrent QA projects involving mobile, web, and API testing.",
       achievements: [
         "Awarded 'Best Performer of the Quarter' for outstanding contribution to quality goals",
         "Executed full-cycle testing for iOS-based Nifty Media Art mobile app",
         "Led penetration, API, and security testing for The Team Companies' Clear and VPAY projects",
-        "Performed OKTA integration testing and mobile build validations"
+        "Performed OKTA integration testing and mobile build validations",
       ],
-      technologies: ["Selenium", "Postman", "JIRA", "Rest Assured", "iOS Testing", "OKTA", "API Security Testing"],
+      technologies: [
+        "Selenium",
+        "Postman",
+        "JIRA",
+        "Rest Assured",
+        "iOS Testing",
+        "OKTA",
+        "API Security Testing",
+      ],
       projects: [
         {
           name: "Nifty Media Art",
-          description: "E2E testing across modules such as Login, Registration, NFT Listings, Marketplace, and Admin Portal for an iOS mobile application",
-          tech: ["iOS Testing", "Manual QA", "Postman", "JIRA"]
+          description:
+            "E2E testing across modules such as Login, Registration, NFT Listings, Marketplace, and Admin Portal for an iOS mobile application",
+          tech: ["iOS Testing", "Manual QA", "Postman", "JIRA"],
+          link: "https://www.niftymedia.art/",
         },
         {
           name: "TTC Clear Project",
-          description: "Led testing efforts for Clear, focusing on API functionality, penetration testing, and OKTA authentication flows",
-          tech: ["Postman", "API Testing", "Security Validation", "OKTA"]
+          description:
+            "Led testing efforts for Clear, focusing on API functionality, penetration testing, and OKTA authentication flows",
+          tech: ["Postman", "API Testing", "Security Validation", "OKTA"],
         },
         {
           name: "TTC VPAY",
-          description: "Tested and validated secure financial workflows within VPAY, ensuring compliance and system reliability",
-          tech: ["Penetration Testing", "API Testing", "Security Compliance"]
-        }
-      ]
+          description:
+            "Tested and validated secure financial workflows within VPAY, ensuring compliance and system reliability",
+          tech: ["Penetration Testing", "API Testing", "Security Compliance"],
+        },
+        {
+          name: "Athlete's Cloud Website",
+          description:
+            "Tested and validated the website, ensuring reliability and security of the platform",
+          tech: [
+            "API Testing",
+            "Manual Testing",
+            "Functional Testing",
+            "Regression Testing",
+            "UAT Testing",
+          ],
+          link: "https://www.athletescloud.com/",
+        },
+      ],
     },
     {
       title: "Software Engineer",
       company: "Larsen & Toubro Infotech (LTIMindtree)",
       location: "(Mumbai, Chennai) India",
       period: "Jul 2018 – Dec 2020",
-      logo: "💻",
-      description: "Worked across development and QA teams, contributing to mission-critical applications through both front-end development and software testing.",
+      logo: `${import.meta.env.BASE_URL}logos/lti-logo.svg`,
+      description:
+        "Worked across development and QA teams, contributing to mission-critical applications through both front-end development and software testing.",
       achievements: [
         "Contributed to planning, execution, and documentation of manual testing efforts",
         "Performed unit, integration, and UAT testing to ensure system integrity",
         "Designed and implemented multiple web pages using HTML, CSS, and JavaScript",
-        "Provided rapid-response support for production-critical issues"
+        "Provided rapid-response support for production-critical issues",
       ],
       technologies: ["HTML", "CSS", "JavaScript", "Manual Testing", "BugZilla", "Waterfall"],
       projects: [
         {
           name: "Kyosan Project – QA & UAT",
-          description: "Participated in QA planning and execution phases for the Kyosan project, supporting UAT and integration testing",
-          tech: ["Manual Testing", "Test Case Design", "UAT", "Bug Tracking"]
+          description:
+            "Participated in QA planning and execution phases for the Kyosan project, supporting UAT and integration testing",
+          tech: ["Manual Testing", "Test Case Design", "UAT", "Bug Tracking"],
         },
         {
           name: "Web Development & UI Integration",
-          description: "Designed and developed client-side pages using HTML/CSS/JS, ensuring seamless navigation and responsiveness",
-          tech: ["HTML", "CSS", "JavaScript"]
-        }
-      ]
-    }
+          description:
+            "Designed and developed client-side pages using HTML/CSS/JS, ensuring seamless navigation and responsiveness",
+          tech: ["HTML", "CSS", "JavaScript"],
+        },
+      ],
+    },
   ];
 
-  const ExperienceCard = ({ exp, showProjects = false }: { exp: any, showProjects?: boolean }) => (
+  const ExperienceCard = ({
+    exp,
+    showProjects = false,
+  }: {
+    exp: any;
+    showProjects?: boolean;
+  }) => (
     <Card className="group hover:shadow-lg transition-all duration-300 mb-6">
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
-            <div className="text-2xl">{exp.logo}</div>
+            <div className="w-10 h-10 shrink-0">
+              {exp.logo && (exp.logo.endsWith(".png") || exp.logo.endsWith(".svg")) ? (
+                <img
+                  src={exp.logo}
+                  alt={`${exp.company} logo`}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <div className="text-2xl">{exp.logo}</div>
+              )}
+            </div>
             <div>
               <CardTitle className="text-xl group-hover:text-primary transition-colors">
                 {exp.title}
@@ -145,12 +197,10 @@ const ExperienceSection = () => {
           <span>{exp.location}</span>
         </div>
       </CardHeader>
-      
+
       <CardContent className="space-y-4">
-        <p className="text-muted-foreground leading-relaxed">
-          {exp.description}
-        </p>
-        
+        <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
+
         <div>
           <h4 className="font-semibold mb-2 text-primary">Key Achievements:</h4>
           <ul className="space-y-1">
@@ -162,7 +212,7 @@ const ExperienceSection = () => {
             ))}
           </ul>
         </div>
-        
+
         <div>
           <h4 className="font-semibold mb-2 text-primary">Technologies:</h4>
           <div className="flex flex-wrap gap-2">
@@ -180,11 +230,21 @@ const ExperienceSection = () => {
             <Accordion type="single" collapsible className="w-full">
               {exp.projects.map((project: any, index: number) => (
                 <AccordionItem key={index} value={`project-${index}`}>
-                  <AccordionTrigger className="text-left">
-                    {project.name}
-                  </AccordionTrigger>
+                  <AccordionTrigger className="text-left">{project.name}</AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-muted-foreground mb-3">{project.description}</p>
+                    <div className="mb-3">
+                      <p className="text-muted-foreground">{project.description}</p>
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary underline text-sm mt-1 inline-block"
+                        >
+                          🔗 Visit Project
+                        </a>
+                      )}
+                    </div>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech: string, techIndex: number) => (
                         <Badge key={techIndex} variant="outline" className="text-xs">
@@ -208,10 +268,11 @@ const ExperienceSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Professional Journey</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            3+ years of progressive QA experience across India and Canada, evolving from foundational manual testing to leading automation initiatives
+            3+ years of progressive QA experience across India and Canada, evolving from foundational
+            manual testing to leading automation initiatives
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="canada" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
@@ -222,13 +283,13 @@ const ExperienceSection = () => {
                 🇮🇳 Indian Experience
               </TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="canada" className="space-y-6">
               {canadianExperience.map((exp, index) => (
                 <ExperienceCard key={index} exp={exp} />
               ))}
             </TabsContent>
-            
+
             <TabsContent value="india" className="space-y-6">
               {indianExperience.map((exp, index) => (
                 <ExperienceCard key={index} exp={exp} showProjects={true} />

@@ -12,7 +12,7 @@ const AboutSection = () => {
     {
       icon: Bug,
       title: "Bug Hunter",
-      description: "Identified and resolved 500+ critical issues, across major projects"
+      description: "Resolved over 500 critical bugs across high-impact projects."
     },
     {
       icon: Shield,

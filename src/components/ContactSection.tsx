@@ -105,12 +105,16 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold mb-4 text-primary">Follow Me</h4>
                 <div className="flex gap-4">
+                  <a href="https://www.linkedin.com/in/prajakta-pakhale" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground">
-                    <Linkedin className="h-4 w-4" />
+                     <Linkedin className="h-4 w-4" />
                   </Button>
+                  </a>
+                   <a href="https://github.com/prajakta9819" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground">
                     <Github className="h-4 w-4" />
                   </Button>
+                  </a>
                 </div>
               </div>
             </div>

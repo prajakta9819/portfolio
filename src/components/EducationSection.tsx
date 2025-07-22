@@ -15,10 +15,11 @@ const EducationSection = () => {
         "Academic Award: DISTINCTION",
         "Document of Recognition: ONTARIO COLLEGE GRADUATE CERTIFICATE"
       ],
-      description: "Focused on Agile methodologies, stakeholder management, budgeting, scheduling, and risk assessment within IT project environment.",
+      description:
+        "Focused on Agile methodologies, stakeholder management, budgeting, scheduling, and risk assessment within IT project environment.",
       subjects: [
         "Technical Communication",
-        "Agile Principles", 
+        "Agile Principles",
         "Stakeholder Management",
         "Project Management",
         "Management & Leadership Essentials",
@@ -31,7 +32,7 @@ const EducationSection = () => {
     },
     {
       degree: "Graduate Certificate in Software Quality & Test Engineering",
-      institution: "Conestoga College", 
+      institution: "Conestoga College",
       location: "Waterloo, Canada",
       period: "May 2023 - Dec 2023",
       gpa: "3.74/4",
@@ -40,12 +41,13 @@ const EducationSection = () => {
         "Dean's Honours List (2023)",
         "Document of Recognition: ONTARIO COLLEGE GRADUATE CERTIFICATE"
       ],
-      description: "Specialised in Software testing methodologies, automation frameworks, and quality assurance principles across web, mobile, and backend systems.",
+      description:
+        "Specialised in Software testing methodologies, automation frameworks, and quality assurance principles across web, mobile, and backend systems.",
       subjects: [
         "High Quality Software Programming",
         "System Analysis and Design",
         "Software Testing Tools",
-        "Software Testing Methodologies", 
+        "Software Testing Methodologies",
         "Software Engineering Principles",
         "User Experience Evaluation",
         "Developing Quality Applications",
@@ -53,6 +55,28 @@ const EducationSection = () => {
         "Security Testing",
         "Database Testing"
       ]
+    },
+    {
+      degree: "Bachelor of Engineering in Information Technology",
+      institution: "Vidyalankar Institution of Technology",
+      location: "Wadala, India",
+      period: "Jun 2015 - May 2018",
+      gpa: "7.17/10",
+      highlights: ["Document of Recognition: UNIVERSITY OF MUMBAI"],
+      description:
+        "Focused on software engineering, data structures, algorithms, networking, and web technologies. Emphasized hands-on learning through projects, research work, and collaborative teamwork to build scalable and secure information systems."
+    },
+    {
+      degree: "Diploma in Computer Engineering",
+      institution: "Vidyalankar Polytechnic",
+      location: "Wadala, India",
+      period: "Jun 2012 - May 2025",
+      gpa: "3.68/4",
+      highlights: [
+        "Document of Recognition: MAHARASHTRA STATE BOARD OF TECHNICAL EDUCATION"
+      ],
+      description:
+        "Provided foundational knowledge in computer hardware, software, and networking. Covered core subjects including programming, database management, computer architecture, and system analysis, preparing me for real-world problem-solving and application development."
     }
   ];
 
@@ -65,7 +89,7 @@ const EducationSection = () => {
       icon: "⚙️"
     },
     {
-      title: "Foundations of Project Management", 
+      title: "Foundations of Project Management",
       provider: "Google",
       year: "2024",
       category: "Foundation",
@@ -74,13 +98,13 @@ const EducationSection = () => {
     {
       title: "Cypress UI automation testing for absolute beginners",
       provider: "Coursera Project Network",
-      year: "2024", 
+      year: "2024",
       category: "Automation",
       icon: "🤖"
     },
     {
       title: "API Testing Using Rest Assured Test Automation Tool",
-      provider: "Coursera Project Network", 
+      provider: "Coursera Project Network",
       year: "2024",
       category: "API",
       icon: "🔌"
@@ -89,7 +113,7 @@ const EducationSection = () => {
       title: "Scrum Master Certification: Scaling Agile and the Team-of-Teams",
       provider: "LearnQuest",
       year: "2024",
-      category: "Foundation", 
+      category: "Foundation",
       icon: "🏃‍♂️"
     },
     {
@@ -133,12 +157,12 @@ const EducationSection = () => {
           </div>
         </div>
       </CardHeader>
-      
+
       <CardContent className="space-y-4">
         <p className="text-muted-foreground leading-relaxed">
           {qualification.description}
         </p>
-        
+
         <div>
           <h4 className="font-semibold mb-2 text-primary flex items-center gap-2">
             <Award className="h-4 w-4" />
@@ -146,24 +170,33 @@ const EducationSection = () => {
           </h4>
           <ul className="space-y-1">
             {qualification.highlights.map((highlight: string, index: number) => (
-              <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">
+              <li
+                key={index}
+                className="text-sm text-muted-foreground flex items-start gap-2"
+              >
                 <span className="text-primary mt-1">🏆</span>
                 {highlight}
               </li>
             ))}
           </ul>
         </div>
-        
-        <div>
-          <h4 className="font-semibold mb-2 text-primary">Key Subjects:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            {qualification.subjects.map((subject: string, index: number) => (
-              <Badge key={index} variant="secondary" className="text-xs justify-start">
-                {subject}
-              </Badge>
-            ))}
+
+        {qualification.subjects && qualification.subjects.length > 0 && (
+          <div>
+            <h4 className="font-semibold mb-2 text-primary">Key Subjects:</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              {qualification.subjects.map((subject: string, index: number) => (
+                <Badge
+                  key={index}
+                  variant="secondary"
+                  className="text-xs justify-start"
+                >
+                  {subject}
+                </Badge>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </CardContent>
     </Card>
   );
@@ -198,11 +231,11 @@ const EducationSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Education & Certifications</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Strong academic foundation in computer science with specialized focus on software quality and project management, 
+            Strong academic foundation in computer science with specialized focus on software quality and project management,
             complemented by industry-recognized certifications
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="academic" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
@@ -213,13 +246,13 @@ const EducationSection = () => {
                 📜 Professional Certifications
               </TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="academic" className="space-y-6">
               {academicQualifications.map((qualification, index) => (
                 <AcademicCard key={index} qualification={qualification} />
               ))}
             </TabsContent>
-            
+
             <TabsContent value="certifications" className="space-y-6">
               <div className="grid gap-6">
                 {certifications.map((cert, index) => (

@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, MapPin, Phone } from "lucide-react";
+import resumeUrl from "../assets/resume.pdf";
 
 const HeroSection = () => {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+   
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-accent/20 to-primary/10 overflow-hidden">
       {/* Background decoration */}
@@ -33,15 +41,16 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button size="lg" onClick= {()=> scrollToSection("#contact")} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
+
             <Button 
               size="lg" 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open(resumeUrl, '_blank')}
             >
               📄 Download Resume
             </Button>
