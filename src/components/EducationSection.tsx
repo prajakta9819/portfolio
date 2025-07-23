@@ -71,7 +71,7 @@ const EducationSection = () => {
       institution: "Vidyalankar Polytechnic",
       location: "Wadala, India",
       period: "Jun 2012 - May 2025",
-      gpa: "3.68/4",
+      gpa: "8.35/10",
       highlights: [
         "Document of Recognition: MAHARASHTRA STATE BOARD OF TECHNICAL EDUCATION"
       ],
